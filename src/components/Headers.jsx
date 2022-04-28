@@ -5,7 +5,7 @@ const Headers = () => {
     "Client ID",
     "Return Type",
     "Description",
-    "Time Estimate",
+    "Hours Estimate",
     "Due",
   ];
 
@@ -13,7 +13,7 @@ const Headers = () => {
     <React.Fragment>
       <tr>
         {headersArray.map((header) => {
-          return <th>{header}</th>;
+          return <th key={header}>{header}</th>;
         })}
       </tr>
     </React.Fragment>

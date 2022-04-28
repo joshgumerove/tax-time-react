@@ -1,6 +1,16 @@
-import React from "react";
+// import React from "react";
+import React, { useEffect, useState } from "react";
 
 const TableData = () => {
+  let [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/api/returns")
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
+
+  console.log(data);
   return (
     <React.Fragment>
       <tr>
