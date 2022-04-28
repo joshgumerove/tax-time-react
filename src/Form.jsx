@@ -9,14 +9,47 @@ const Form = () => {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        Client Name:
+      <div>
+        <label>Client ID:</label>
         <input
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-      </label>
+      </div>
+      <div>
+        <label>Return Type</label>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </div>
+      <div>
+        <label>Description</label>
+        <textarea
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </div>
+      <div>
+        <label>Hours Estimate</label>
+        <input
+          type="number"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </div>
+      <div>
+        <label>Hours Estimate</label>
+        <input
+          type="date"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </div>
+
       <input type="submit" value="Submit" />
     </form>
   );
