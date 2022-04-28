@@ -1,12 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Table from "./components/containers/Table";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>HELLO JOSH</h1>
-      </header>
+      <h1>TaxTime</h1>
+      <Table />
     </div>
   );
 }
