@@ -13,11 +13,6 @@ const TableData = () => {
   console.log(data);
   return (
     <React.Fragment>
-      {/* <td>Fake ID</td>
-        <td>1040</td>
-        <td>A very Difficult Return</td>
-        <td>10</td>
-        <td>4/15/2021</td> */}
       {data.map(
         ({
           client_id,
