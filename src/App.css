@@ -25,4 +25,7 @@ body {
   background-color: #aed136;
   border: 3px double #3c3c3c;
   color: #1d4c7e;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
