@@ -4,7 +4,7 @@ import TableHead from "./TableHead";
 
 const Table = () => {
   return (
-    <table>
+    <table className="table">
       <TableHead />
       <TableBody />
     </table>

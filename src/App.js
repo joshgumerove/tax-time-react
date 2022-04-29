@@ -5,8 +5,9 @@ import Form from "./Form";
 function App() {
   return (
     <div className="App">
-      <h1>TaxTime</h1>
+      <h1 className="header">TaxTime</h1>
       <Form />
+      <br></br>
       <Table />
     </div>
   );

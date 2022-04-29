@@ -27,7 +27,7 @@ const Form = () => {
     }).then((res) => res.json());
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="time-form">
       <div>
         <label>Client ID:</label>
         <input
