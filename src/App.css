@@ -1,25 +1,28 @@
 .App {
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-  background-color: lightgray;
+  background-color: #fff;
 }
 .table {
-  background-color: lightgrey;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border: solid 3px #333;
+  background-color: #1d4c7e;
+  color: #fff;
+  border: 3px double #3c3c3c;
   margin-left: auto;
   margin-right: auto;
 }
 
 .header {
-  background-color: #333;
+  background-color: #3c3c3c;
   color: white;
   height: 100px;
+  border: 3px double #fff;
 }
 
 .time-form {
-  background-color: lightblue;
-  border: 3px solid blue;
+  background-color: #aed136;
+  border: 3px double #3c3c3c;
+  color: #1d4c7e;
 }
