@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Form = () => {
-  const api = "http://localhost:3001/api/returns";
+  const api = "http://localhost:3001/api/clients";
 
   const [clientId, setClientId] = useState(0);
   const [returnType, setReturnType] = useState("");
@@ -12,16 +12,19 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newReturn = {
-      id: parseInt(clientId),
+      client_id: parseInt(clientId),
       return_type: returnType,
       description: description,
       time_estimate: parseInt(time),
-      date: new Date(date),
+      due_date: new Date(date),
     };
-    fetch(api)
-      .then((res) => res.json())
-      .then(console.log("success"));
-    console.log(newReturn);
+    fetch(`${api}/${newReturn.client_id}/returns`, {
+      method: "POST", // or 'PUT'
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newReturn),
+    }).then((res) => res.json());
   };
   return (
     <form onSubmit={handleSubmit}>
