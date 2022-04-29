@@ -8,9 +8,8 @@ const TableData = () => {
     fetch("http://localhost:3001/api/returns")
       .then((response) => response.json())
       .then((data) => setData(data));
-  }, []);
+  }, [data]);
 
-  console.log(data);
   return (
     <React.Fragment>
       {data.map(
