@@ -13,7 +13,11 @@ const Headers = () => {
     <React.Fragment>
       <tr>
         {headersArray.map((header) => {
-          return <th key={header}>{header}</th>;
+          return (
+            <th className="header-table" key={header}>
+              {header}
+            </th>
+          );
         })}
       </tr>
     </React.Fragment>

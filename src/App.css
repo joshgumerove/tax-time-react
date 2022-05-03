@@ -6,13 +6,14 @@
 }
 
 body {
-  background-color: #f4f4f4;
+  background: url("https://target.scene7.com/is/image/Target/GUEST_77e9c319-7038-4cf9-b799-447540b95530?wid=488&hei=488&fmt=pjpeg")
+    no-repeat center center/cover;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .table {
   background-color: #1d4c7e;
   color: #fff;
-  border: 3px double #3c3c3c;
+  border: 3px double #fff;
   margin-left: auto;
   margin-right: auto;
 }
@@ -29,7 +30,7 @@ body {
 
 .time-form {
   background-color: #aed136;
-  border: 3px double #3c3c3c;
+  border: 3px double #fff;
   color: #1d4c7e;
   width: 50%;
   margin-left: auto;
@@ -38,7 +39,7 @@ body {
 }
 
 tbody tr:hover {
-  background-color: #3c3c3c;
+  background-color: #aed136;
 }
 
 .btn {
@@ -52,4 +53,16 @@ tbody tr:hover {
 
 .btn:hover {
   background-color: #4267b2;
+}
+
+.header-table {
+  background: lightgray;
+  color: #000;
+  border: 2px #fff solid;
+  font-weight: 100;
+}
+
+.header-table:hover {
+  background: #aed136;
+  color: #fff;
 }
