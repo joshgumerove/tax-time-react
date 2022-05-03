@@ -1,10 +1,13 @@
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-  background-color: #fff;
+  background-color: #f4f4f4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .table {
   background-color: #1d4c7e;
@@ -19,13 +22,34 @@ body {
   color: white;
   height: 100px;
   border: 3px double #fff;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 20px;
 }
 
 .time-form {
   background-color: #aed136;
   border: 3px double #3c3c3c;
   color: #1d4c7e;
-  width: 90%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+}
+
+tbody tr:hover {
+  background-color: #3c3c3c;
+}
+
+.btn {
+  border: none;
+  background-color: #1d4c7e;
+  padding: 5px;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #4267b2;
 }

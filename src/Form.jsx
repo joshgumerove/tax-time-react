@@ -69,7 +69,7 @@ const Form = () => {
         />
       </div>
 
-      <input type="submit" value="Submit" />
+      <input class="btn" type="submit" value="Submit" />
     </form>
   );
 };
