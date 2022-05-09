@@ -5,7 +5,8 @@ const TableData = () => {
   let [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/returns")
+    // fetch("http://localhost:3001/api/returns")
+    fetch("https://backend-main-repo123.herokuapp.com/api/returns")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, [data]);
